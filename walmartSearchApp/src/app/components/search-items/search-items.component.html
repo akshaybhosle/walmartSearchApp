@@ -1,0 +1,34 @@
+<div class="header">
+  <span (click)="clearAll()" class="walmart-logo-class walmart-logo"></span>
+</div>
+<div class="col-sm-12">
+    <div style="padding: 20px">
+      <label>Search item: </label>
+      <input id="upc-search-box" #searchBox type="text" class="search-box" placeholder="Search"
+             [(ngModel)]="searchField" (change)="checkSearchString()">
+      <span class="fa fa-search search-icon" ></span>
+    </div>
+
+  <div class="text-center">
+    <p class="lead" *ngIf="loading">Loading...</p>
+  </div>
+
+      <table *ngIf="lookupItems && lookupItems.length > 0" class="table tableClass">
+        <tbody>
+        <tr *ngFor="let item of lookupItems">
+          <td class="tableThumbImage"><a (click)="getItemDesc(item)">
+          <img src="{{item.thumbnailImage}}">
+            </a>
+          </td>
+          <td class="searchItems"><a (click)="getItemDesc(item)">
+            {{item.name}}
+            </a>
+          </td>
+        </tr>
+        </tbody>
+      </table>
+  <div *ngIf="display">
+    <app-result-item [item]="searchParams"></app-result-item>
+  </div>
+
+</div>
