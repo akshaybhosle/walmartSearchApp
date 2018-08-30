@@ -1,0 +1,36 @@
+.search-box  {
+  margin-left: 10px;
+  width: 200px;
+  text-indent: 8px;
+  height: 25px;
+  border-radius: 10px;
+  border: 2px solid #B8B8B8;
+  position: relative;
+  outline-width: 0px;
+}
+
+.search-box::-ms-clear  {
+  display: none;
+}
+
+.wrapper {
+  text-align: center;
+}
+
+.button {
+  position: absolute;
+  right: 50%;
+}
+
+.walmart-logo {
+  background-image: url('./../assets/images/walmart_color.png');
+  height: 53px;
+  width: 56px;
+  display: inline-block;
+  line-height: 32px;
+}
+
+.api-key-text {
+  font-family: BogleWeb-Regular, Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
