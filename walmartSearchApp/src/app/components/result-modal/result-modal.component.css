@@ -1,0 +1,22 @@
+.priceClass {
+  font-family: BogleWeb-Regular Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  padding-top: 5px!important;
+  border-bottom: 1px solid #e9ecef;
+}
+.modalHeader  {
+  font-family: BogleWeb-Regular Arial, Helvetica, sans-serif;
+  font-size: 20px !important;
+  font-weight: bold;
+}
+
+.descClass  {
+  font-family: BogleWeb-Regular Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  align-items: center;
+}
+
+.thumbImage  {
+  cursor: pointer;
+  padding-left: 30px;
+}

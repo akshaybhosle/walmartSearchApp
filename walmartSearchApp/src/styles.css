@@ -1,1 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
+@font-face {
+  font-family: Bogle-Regular;
+  src: url('assets/font/Bogle_Fonts.001/OTF/Bogle-Regular.otf') format("opentype");
+}
+
+@font-face {
+  font-family: Bogle-Black;
+  src: url('assets/font/Bogle_Fonts.001/OTF/Bogle-Black.otf') format("opentype");
+}
+
+@font-face {
+  font-family: BogleWeb-Regular;
+  src: url('assets/font/Bogle_Fonts.001/Web/BogleWeb-Regular.ttf') format("truetype");
+}

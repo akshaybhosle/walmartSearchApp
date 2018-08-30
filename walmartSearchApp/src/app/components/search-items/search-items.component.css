@@ -1,0 +1,75 @@
+.walmart-logo {
+  background-image: url('../../../assets/images/walmart_color.png');
+  height: 53px;
+  width: 56px;
+  display: inline-block;
+  line-height: 32px;
+}
+
+.padding30  {
+  padding-left: 50px;
+}
+
+.paddingKeyField  {
+  padding: 30px;
+}
+
+.header {
+  height: 70px;
+}
+
+.keyInput {
+  height: 10px !important;
+}
+
+.searchItems  {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 200px;
+  cursor: pointer;
+}
+
+.tableClass {
+  position: relative;
+  align-content: center;
+}
+
+.tableThumbImage  {
+  width: 10px;
+  height: 10px;
+  cursor: pointer;
+}
+
+.search-box  {
+  margin-left: 10px;
+  width: 500px;
+  text-indent: 8px;
+  height: 25px;
+  border-radius: 10px;
+  border: 2px solid #B8B8B8;
+  position: relative;
+  outline-width: 0px;
+}
+
+.search-box::-ms-clear  {
+  display: none;
+}
+
+.search-icon  {
+  position: absolute;
+  top:25px;
+  left: 970px;
+  font-size: 15px;
+  color: gray;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+}
+
+.walmart-logo-class {
+  padding: 20px;
+  float: left;
+  cursor: pointer;
+  margin: 20px;
+}

@@ -1,0 +1,59 @@
+<div class="modal-header">
+  <h5 class="modalHeader modal-title">{{displayItem.lookupItem.name}}</h5>
+</div>
+<div class="modal-body">
+  <div>
+    <div>
+      <div>
+       <img src="{{displayItem.lookupItem.thumbnailImage}}">
+        <span style="padding-left: 30px">
+          <label class="descClass">Customer reviews:</label>
+            <img style="padding-left: 15px" *ngIf="displayItem.lookupItem.customerRatingImage !== ''"
+                 src="{{displayItem.lookupItem.customerRatingImage}}">
+          <label *ngIf="displayItem.lookupItem.customerRatingImage === ''" class="descClass">None</label>
+        </span>
+      </div>
+      <span style="padding-left: 130px">
+        <span>
+          <label>Brand:&nbsp;{{displayItem.lookupItem.brandName}}</label>
+        </span>
+      </span>
+
+    </div>
+    <div style="border-bottom: 1px solid #e9ecef; padding-left: 15px">
+      <label>Price: ${{displayItem.lookupItem.salePrice}}</label>
+    </div>
+  </div>
+  <div style="padding-top: 5px">
+    <label class="descClass">{{displayItem.lookupItem.shortDescription}}</label>
+  </div>
+  <div style="padding-top: 10px">
+    <div style="border-bottom: 1px solid #e9ecef;" class="descClass">
+      <label><b>People who bought this also bought:</b></label>
+    </div>
+    <div style="border-bottom: 1px solid gray; padding: 2px" *ngFor="let item of lookupItems">
+      <ng-template #tipContent>
+        <label>Price: ${{item.salePrice}}</label>
+      </ng-template>
+      <span>
+        <div>
+          <label>Customer reviews:</label>
+          <img style="padding-left: 15px" src="{{item.customerRatingImage}}">
+          <img class="thumbImage" src="{{item.thumbnailImage}}" [ngbTooltip]="tipContent">
+        </div>
+        <span>
+          <label>
+            {{item.name}}
+          </label>
+        </span>
+      </span>
+    </div>
+  </div>
+</div>
+<div class="modal-footer">
+  <button type="button" class="btn btn-outline-dark" (click)="closeModal()">Close</button>
+</div>
+<div *ngIf="backToSearch">
+  <app-root></app-root>
+</div>
+
